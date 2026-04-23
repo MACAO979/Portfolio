@@ -1,1 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MAC's HOME</title>
+        <!-- MAC Services-->
+        <link rel="icon" type="image" href="assets/logo mac.png" />
+          <!-- resetten van browsers -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- JavaScript: Bootstrap Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+       </script>
+       <!-- extra CSS  Bootstrap)-->
+       <link href="css/styles.css" rel="stylesheet" />
+       <!--My Leeaflet MAP-->
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+              <!-- Java Leaflet's CSS -->
+       <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
 
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><img src="assets/logo mac.png" alt="MACs Services" width="100" height="75"> MACS Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="Project1.html" role="button">Projects</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Project 1</a></li>
+                              <li><a class="dropdown-item" href="#">Project 2</a></li>
+                              <li><a class="dropdown-item" href="#">Project 3</a></li>
+                              <li><a class="dropdown-item" href="#">Project 4</a></li>
+                              <li><a class="dropdown-item" href="#">Project 5</a></li>
+                              <li><a class="dropdown-item" href="#">Project 6</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="news">News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class=" text-center my-5">
+                    <h1 class="fw-bolder text-uppercase">Welcome to MAC's Services</h1>
+                    <p class="lead mb-0">At MAC Services we assist to make your ideas possible. By providing you with the best solutions technoligy has at hand.
+                        As we say we dont know  Problems only Possibilities</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+         <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="assets/Sfeerbeeld 02.png" alt="brug in Antwerpen" /></a>
+                        <div class="card-body text-center">
+                            <div class="small "><strong><span style="background-color:rgb(12, 212, 146);" id="datetime"></span></strong></div>
+                            <h2 class="card-title">Bridging The Gap</h2>
+                            <p class="card-text">A step closer to my portfolio, this is the first page going live!!</p>
+                            
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="assets/webdesign2.jpg" width="750" height="350" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="large  text-uppercase" style="color:#3bd945;"> <strong>I. Web Design</strong></div>
+                                      <h2 class="card-title h4">My Portfolio</h2>
+                                      <p class="card-text">Here you can read all about the process of gathering the information and creating the website.</p>
+                                      <a class="btn btn-primary" href="Project1.html">Read more →</a>
+                                    </div>
+                                 </div>
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="assets/socials3.jpg" alt="collage of social media icons" /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong> II. Communication Management</strong></div>
+                                    <h2 class="card-title h4"><q>Communication is The key</q></h2>
+                                    <p class="card-text"> We can assist in various ways to getting your bussiness positioned on the internet!
+                                        As there is a broad medium, with lots of infomation, your business can get scoffeld. To ensure that when looked up it is findable.
+                                     We at MAC dont only make sure it is found easily, but also that you are prompted on all search egines. As part of a detailed marketingplan we take care 
+                                     of all your online adds  and have a social media presence</p>
+                                   <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
+                                </div>
+                            </div>
+
+                                 <div class="card mb-4">
+                                <a href="#!"><img class="card-img-rounded float-left" src="assets/snb cbl.jpg" width="250" height="200"  alt=" rj 45 cables in router connector" /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong> III. Systeem & Netwerkbeheer (SNB)</strong></div>
+                                    <h2 class="card-title h4"><q>Communication is The key</q></h2>
+                                    <p class="card-text"> In todays business, all companies from small to large. have a network that at least consists of a telephone, computer, printer and a internet connection. We at MAC help setup this network and connecting all elements with in your network. 
+                                        In the case of multiple offices we make sure all your offcies are connected within the network. This in such a way that you can easely control and monitor it.
+                                        As there is a broad medium, with lots of infomation, your business - Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloremque vitae. Nihil natus, non deserunt asperiores laudantium magni magnam neque exercitationem incidunt quibusdam iste architecto nisi dicta ab sit corrupti.
+                                   <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
+                                </div>
+                            </div>
+                            
+                            </div>
+
+
+                            
+                           <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="assets/sec2.jpg" alt=" 3d image of hand and keylock" /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>IV.Security Assessment</strong></div>
+                                    <h2 class="card-title h4">Besides fisical security now days it is eminent to have a secure IT environment</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                                    <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4 rounded">
+                                <a href="#!"><img class="card-img-top" src="assets/div.png" alt="old archiving situation to new digital folder situation" /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>V.<abbr title="Documentaire Informatievoorziening">DIV</abbr> and Workflow/Process Management</strong></div>
+                                    <h2 class="card-title h4">Assisting in handeling your Documentattion and the process of receiving and documenting it</h2>
+                                    <p class="card-text">As Archiving is process it also stands for a workglow. To give you a clearer view of both we will use the example of sumilating a permit application.
+                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                   <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
+                                </div>
+                            </div>
+                              <div class="card mb-4 rounded">
+                                <a href="#!"><img class="card-img-top" src="assets/smhome.jpg" alt="smart home image" /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>VI. Home&Office Smart Appliances</strong></div>
+                                    <h2 class="card-title h4">IoT At Home and in The Office</h2>
+                                    <p class="card-text">From you door bell to youir dishwasher, home lighting almost every equipment in the home or office can operate from a distacne or set activation parameters to work according to your desires or better said when is needed! Not only saving you time but having you run your business cost efficntly.
+                                        <br>
+                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                    <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination--> 
+                    
+                     <div class="card mb-8">
+           <div class="card-header text-uppercase" id="schedule1" style="background-color:rgb(12, 212, 146);">MAke an appointment</div>
+  <iframe src="https://www.supersaas.be/schedule/macservices1/macservices  " width="800" height="600" frameborder="0"></iframe>
+
+
+        <div class="card-body"><!-- checken of ik nog een footer plaats--></div>
+        </div>
+ 
+
+
+                    
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(12, 212, 146);">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">Projects</div>
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">I.Web Design</a></li>
+                                        <li><a href="#!">II.Com. Management</a></li>
+                                        <li><a href="#!">III.SNB</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">IV.Security</a></li>
+                                        <li><a href="#!"><abbr title="Documentaire Informatievoorziening">V.DIV</abbr></a></li>
+                                        <li><a href="#!">VI.Smart Appliances</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase" id="news" style="background-color:rgb(12, 212, 146);">News</div>
+                        <div class="card-body" id="news"><strong>Current Tech News</strong><iframe width="350" height="500" src="https://rss.app/embed/v1/wall/toEipx90F1iblbXc" frameborder="0"></iframe></div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                     <ul class="nav nav-tabs card-header-tabs"  id="myTab" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" id="macschoice-tab" data-bs-toggle="tab" href="#tab10" role="tab" aria-controls="whymac" aria-selected="true">.
+                             Why MAC</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" id="addedvalue-tab" data-bs-toggle="tab" href="#tab9" role="tab" aria-controls="addedvalue" aria-selected="false">
+                                Our added value
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                <a class="nav-link" id="cc-tab" data-bs-toggle="tab" href="#tab8" role="tab" aria-controls="careforcostumers" aria-selected="false">
+                       Care for Costumers
+                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link" id="price" data-bs-toggle="tab" href="#tab7" role="tab" aria-controls="price" aria-selected="false">
+                    Price
+                </a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" id="benefits-tab" data-bs-toggle="tab" href="#tab6" role="tab" aria-controls="benefits" aria-selected="false">
+                    Your Benefits
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" style="background-color:#07f2b0" id="tab10" role="tabpanel" aria-labelledby="macschoice">
+                <h3 class="text-center">Why MAC is Your Choice</h3>
+                <p class="text-center"><strong>Besides the fact of fresh trained professionals in IT, we offer an  in depth assessment which leads to  different possibilities in how to best position your business.</strong></p>
+            </div>
+        
+        <div class="tab-pane fade" style="background-color:#07F2C7" id="tab9" role="tabpanel" aria-labelledby="ta2-tab">
+                <h3 class="text-center">Our Added Value</h3>
+                <p class="text-center">Lorem This is Our Added Value tab.
+                    Lorem This is Our Added Value tab.
+                    Lorem This is Our Added Value tab.
+                    Lorem This is Our Added Value tab.
+                </p>
+            </div>
+            <div class="tab-pane fade" style="background-color:#07f2b0" id="tab8" role="tabpanel" aria-labelledby="tab3-tab">
+                <h3 class="text-center">Care for Costumers Content</h3>
+                <p class="text-center justify-content-center">This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Costumers tab.
+                </p>
+            </div>
+
+              <div class="tab-pane fade" style="background-color:#07F2C7" id="tab7" role="tabpanel" aria-labelledby="tab4-tab">
+                <h3 class="text-center">Price</h3>
+                <p class="text-center">This is the content of the Care for Price tab. This is the content of the Care for Price tab. This is the content of the Care for Price tab. This is the content of the Care for Price tab.
+                </p>
+            </div>
+
+              <div class="tab-pane fade" style="background-color:#07f2b0"  id="tab6" role="tabpanel" aria-labelledby="tab5-tab">
+                <h3 class="text-center">Your Benefits</h3>
+                <p class="text-center">This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Price tab.
+                    This is the content of the Care for Price tab.
+                    This is the content of the Care for Price tab.
+                </p></div>
+            </div>
+                    </div>
+
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);" >Contact</div>
+                        <div class="row">
+                        <div class="col">  
+                          <div class="card-body"><p>MAC's Services<br>
+                                <a href="mailto:powerweb@ap.be">mac@services.be
+                                </a><br>
+                                    +32 470 935330 </p>
+                                    <ul class="list-inline socials">
+                                    <li class="list-inline-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                   <i class="bi bi-youtube blauwgrijs fs-6"></i>
+                                  </a>
+                            </li>
+                            <li class="list-inline-item">
+                                      <a href="https://www.instagram.com" target="_blank">
+                                         <i class="bi bi-instagram blauwgrijs fs-6"></i>
+                                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                      <i class="bi bi-facebook blauwgrijs fs-6"></i>
+                                 </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank">
+                                  <i class="bi bi-twitter blauwgrijs fs-6"></i>
+                                </a>
+                             </li>
+                             </ul>
+                            </div>
+                        </div> <div class="col"> 
+                            <div class="card-body"><p>Fill in our <a href="Contact.html">contactform</a> <br>
+                                 or <br>
+                                make an <a href="#schedule1">appointment</a></p></div>
+                            </div>
+                             </div> 
+                    </div>
+                    <div class="card mb-4 rounded">
+                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>Testimonial</strong></div>
+                                    <h2 class="card-title h4">Feedback lector</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                    <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
+                                </div>
+                            </div>
+
+                      <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">MAP</div>
+                        <div class="card-body"> <div class="map" id="map"> L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+                                maxZoom: 19,
+                                attribution: '&copy; <a href="contact.html">MACServices Address Map</a>'
+                        }).addTo(map);
+                        
+                        </div>MAP via openstreetmap</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <!-- Responsive navbar-->
+ <nav class="navbar navbar-expand-sm bg-light container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><img src="assets/logo mac.png" alt="MACs Services" width="100" height="75"> MACS Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item dropup"></li>
+                        <li class="nav-item dropup">
+                           <a class="nav-link dropdown-toggle dropup-content" href="Project1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu" id="droppup">
+                             <li><a class="dropdown-item" href="#">Project 1</a></li>
+                              <li><a class="dropdown-item" href="#">Project 2</a></li>
+                              <li><a class="dropdown-item" href="#">Project 3</a></li>
+                              <li><a class="dropdown-item" href="#">Project 4</a></li>
+                              <li><a class="dropdown-item" href="#">Project 5</a></li>
+                              <li><a class="dropdown-item" href="#">Project 6</a></li>
+                            </ul>
+                        </li>   
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="news">News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+            <div class="container"> 
+                <div class="row"> <div class="col"><p>dddssdsddsd</p></div></div>
+                <div class="row"> 
+                 <div class="col m-0 text-center text-white">Customer Extranet</div>
+                 <div class="col m-0 text-center text-white">Privacy policy</div>
+                 <div class="col m-0 text-center text-white">Cookies policy</div>
+                 <div class="col m-0 text-center text-white">Terms & Agreements</div>
+                <p class="m-0 text-center text-white">Copyright &copy; MAC Services 2026</p></div>
+                <div class="col text-end">
+                <ul class="list-inline socials">
+                                    <li class="list-inline-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                   <i class="bi bi-youtube blauwgrijs fs-6"></i>
+                                  </a>
+                            </li>
+                            </li>
+                            <li class="list-inline-item">
+                                      <a href="https://www.instagram.com" target="_blank">
+                                         <i class="bi bi-instagram blauwgrijs fs-6"></i>
+                                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                      <i class="bi bi-facebook blauwgrijs fs-6"></i>
+                                 </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank">
+                                  <i class="bi bi-twitter blauwgrijs fs-6"></i>
+                                </a>
+                             </li></div>
+                <div class="row"></div>
+            </div>
+        </footer>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+       
