@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>MAC's Contact</title>
+        <!-- MAC Services-->
+        <link rel="icon" type="image" href="assets/logo mac.png" />
+          <!-- resetten van browsers -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- JavaScript: Bootstrap Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+       </script>
+       <!-- extra CSS  Bootstrap)-->
+       <link href="css/styles.css" rel="stylesheet" />
+       <!--My Leeaflet MAP-->
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+              <!-- Java Leaflet's CSS -->
+       <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        
+        <!-- my fonts -->
+         <link href='https://fonts.googleapis.com/css?family=Suez One' rel='stylesheet'>
+         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><img src="assets/logo mac.png" alt="MACs Services" width="100" height="75"> MACS Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="Project1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Project 1</a></li>
+                              <li><a class="dropdown-item" href="#">Project 2</a></li>
+                              <li><a class="dropdown-item" href="#">Project 3</a></li>
+                              <li><a class="dropdown-item" href="#">Project 4</a></li>
+                              <li><a class="dropdown-item" href="#">Project 5</a></li>
+                              <li><a class="dropdown-item" href="#">Project 6</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="news">News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class=" my-5">
+                    <h1 class="favfont2 text-center text-uppercase">Welcome to MAC's Services</h1>
+                    <p class="lead mb-0 favfont">This is our contact section. You have several options to contact us. 
+                                         Please note that we communicate in the follwoing languages Languages:
+                                         Dutch, English  and French, and we are looking forward to hear from you! </p>
+                    <ol>
+                        <li>By phone: +3200 123-6543 Monday to Friday, from 09:00 AM - 17:00  PM</li>
+                        <li>By e-mail: mac@services.com.</li>
+                        <li>Or make an appointment, select the date and time that fits your schedule.</li>
+                    </ol>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+         <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="assets/Sfeerbeeld 03.png" alt="connectedworld" /></a>
+                        <div class="card-body text-center">
+                            <div class="small text-white"><strong><span style="background-color:#0c8482;" id="datetime"></span></strong></div>
+                            <h2 class="card-title" id="contactform">Connecting equals Caring</h2>
+                            <h4 class="card-text">Happy to see you at this section!</h4> 
+                            <h6>When choosing the from option, take in to account that fields with <label for="" class="required"></label>are mandatory!
+                              Furthermore the password option is <strong>only</strong> if you also wish to register!</h6>
+                            
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <form action="#" method="post">
+                                    <h2 class="text-uppercase fs-6 fw-bolder pt-3">Contact gegevens</h2>
+                                 <div class="form-group" >
+                                     <div class="row">
+                                        <div class="col required"><label for="firstname">firstname:</label></div>
+                                        <div class="col required"><label for="lastname">lastname:</label></div>
+                                    </div>
+                                 </div>
+                                 </div>
+                                 <div class="conatiner">
+                                    <div class="form-group row">
+                                        <div class="row col"><input type="text" id="firstname" name="firstname" placeholder="add your name" /></div>
+                                        <div class="row col"><input type="text" id="lastname" name="lastname" /></div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group row">
+                                        <div class="col"><label for="tel">Uw mobiel:</label></div>
+                                        <div class="col"><label for="date">Uw geboorteddatum:</label></div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class=" form-group row">
+                                        <div class="row col"><input type="tel" id="mobile" name="mobile" placeholder="" /></div>
+                                        <div class="row col"><input type="date" id="geboorteddatum" name="geboorteddatum" /></div>
+                                    </div>
+                                </div>
+                                <h2 class="text-uppercase fs-6 fw-bolder pt-3">Accountgegevens</h2>
+                                <div class="container">
+                                    <div class="form-group">
+                                        <div class="row required">Email</div>
+                                        <div class="row"><input type="email" id="email" name="email" required /></div>
+                                    </div>
+                                </div>
+                                <div class="conatiner">
+                                    <div class="form-group row">
+                                        <div class="col"><label for="password">Uw wachtwoord:</label></div>
+                                        <div class="col"><label for="password">Bevestig uw wachtwoord:</label></div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class=" form-group row">
+                                        <div class="row col"><input type="password" id="password" name="password" placeholder="Min. 8 characters, 1 number, 1 Uppercase" /></div>
+                                        <div class="row col"><input type="password" id="password" name="password" /></div>
+                                    </div>
+                                 </div>
+                                   <h2 class="text-uppercase fs-6 fw-bolder pt-3">Adressgegevens</h2>
+                                 <div class="container">
+                                    <div class="row required">Adress</div>
+                                       <div class="row"><input type="address" id="address" name="address" required /></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-4 required"><label  for="zipcode"  aria-required="true">Postcode:</label></div>
+                                            <div class="col-md-4 required"><label for="city">Woonplaats:</label>
+                                        </div>
+                                        <div class="col-md-4 required"><label for="country">land:</label></div>
+                                    </div>
+                                    <div class="form-group">
+                                         <div class="row">
+                                             <div class="col-md-4"><input type="zipcode" id="zipcode" name="zipcode" /></div>
+                                             <div class="col-md-4"><input type="city" id="city" name="city"  /></div>
+                                             <div class="col-md-4">
+                                                <select class="form-select" multiple aria-label="multiple select example">
+                                                    <option selected>Belgie</option>
+                                                    <option value="1">Duitsland</option>
+                                                    <option value="2">Nederland</option>
+                                                    <option value="3">Suriname</option>
+                                                    <option value="4">America</option>
+                                                    <option value="5">Luxemburg</option>
+                                                    <option value="6">Verenigd Koninkrijk</option>
+                                                </select>
+                                            </div>
+                                            <div class="row">
+                                                <h2 class="text-uppercase fs-6 fw-bolder pt-3">Waar mogen wij u mee bijstaan</h2>
+                                            </div>
+                                            <div class="col">
+                                            <select class="form-select" multiple aria-label="multiple landen 4">
+                                                <option selected>Web Design</option>
+                                                <option value="1">Communication Management</option>
+                                                <option value="2">Security Assessment</option>
+                                                <option value="3">DIV</option>
+                                                <option value="4">Systeem&Netwerkbeheer</option>
+                                                <option value="5">Home&Office Smart Appliances</option>
+                                            </select>
+                                        </div>
+                                        <h2 class="text-uppercase fs-6 fw-bolder pt-3">Hoe tevreden ben je over de informatie voorziening op onze Website?</h2>
+                                        <div class="mx-0 w-100">
+                                             <div class="text-center">
+                                              <p><strong>Drag the slider to select level of satisfaction</strong></p>
+                                            </div>
+                                            <label for="customRange3" class="form-label">0</label>
+                                            <label for="customRange3" class="form-label float-end">10</label>
+                                            <div data-mdb-range-init class="range"><input type="range" class="form-range" min="0" max="10" step="1" id="customRange3" /></div>
+                                        </div>
+                                        <div> <label for="sugestion">Heeft u sugesties of toevoeging</label></div>
+                                        <div> <input type="input-group-text" /></div>
+                                        <div class="row form-check">
+                                           <div> <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1"></div>
+                                            <div><label class="form-check-label" for="radioDefault1"></label>algemene voorwaarden gelezen en goedgekeurd</div> 
+                                            </div>       
+                                        </div>
+                                 </div>
+                                 <div class="text-start">
+                                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary mt-3" style="color:white; background-color:#1c20ef ;">Submit</button>
+                                 </div></form>
+                                 
+                                 </div>
+                           
+                                 </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Pagination--> 
+                    
+                     <div class="card mb-8">
+                        <div class="card-header text-uppercase" id="schedule" style="background-color:rgb(12, 212, 146);">MAke an appointment</div>
+  <iframe src="https://www.supersaas.be/schedule/macservices1/macservices  " width="800" height="600" frameborder="0"></iframe>
+
+        <div class="card-body"><!-- checken of ik nog een footer plaats--></div>
+        </div>
+ 
+
+
+                    
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(12, 212, 146);">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">Projects</div>
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">I.Web Design</a></li>
+                                        <li><a href="#!">II.Com. Management</a></li>
+                                        <li><a href="#!">III.SNB</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">IV.Security</a></li>
+                                        <li><a href="#!"><abbr title="Documentaire Informatievoorziening">V.DIV</abbr></a></li>
+                                        <li><a href="#!">VI.Smart Appliances</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                        <div class="card-header text-uppercase" id="news" style="background-color:rgb(12, 212, 146);">News</div>
+                        <div class="card-body"><strong>Current Tech News</strong><iframe width="350" height="500" src="https://rss.app/embed/v1/wall/toEipx90F1iblbXc" frameborder="0"></iframe></div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                  <ul class="nav nav-tabs card-header-tabs"  id="myTab" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" id="macschoice-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="whymac" aria-selected="true">.
+                             Why MAC</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" id="addedvalue-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="addedvalue" aria-selected="false">
+                                Our added value
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                <a class="nav-link" id="cc-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="careforcostumers" aria-selected="false">
+                       Care for Costumers
+                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link" id="price" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="price" aria-selected="false">
+                    Price
+                </a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" id="benefits-tab" data-bs-toggle="tab" href="#tab5" role="tab" aria-controls="benefits" aria-selected="false">
+                    Your Benefits
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" style="background-color:#07f2b0" id="tab1" role="tabpanel" aria-labelledby="macschoice">
+                <h3 class="text-center">Why MAC is Your Choice</h3>
+                <p class="text-center"><strong>Besides the fact of fresh trained professionals in IT, we offer an  in depth assessment which leads to  different possibilities in how to best position your business.</strong></p>
+            </div>
+        
+        <div class="tab-pane fade" style="background-color:#07F2C7" id="tab2" role="tabpanel" aria-labelledby="ta2-tab">
+                <h3 class="text-center">Our Added Value</h3>
+                <p class="text-center">Lorem This is Our Added Value tab.
+                    Lorem This is Our Added Value tab.
+                    Lorem This is Our Added Value tab.
+                    Lorem This is Our Added Value tab.
+                </p>
+            </div>
+            <div class="tab-pane fade" style="background-color:#07f2b0" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                <h3 class="text-center">Care for Costumers Content</h3>
+                <p class="text-center justify-content-center">This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Costumers tab.
+                </p>
+            </div>
+
+              <div class="tab-pane fade" style="background-color:#07F2C7" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                <h3 class="text-center">Price</h3>
+                <p class="text-center">This is the content of the Care for Price tab. This is the content of the Care for Price tab. This is the content of the Care for Price tab. This is the content of the Care for Price tab.
+                </p>
+            </div>
+
+              <div class="tab-pane fade" style="background-color:#07f2b0"  id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+                <h3 class="text-center">Your Benefits</h3>
+                <p class="text-center">This is the content of the Care for Costumers tab.
+                    This is the content of the Care for Price tab.
+                    This is the content of the Care for Price tab.
+                    This is the content of the Care for Price tab.
+                </p></div>
+            </div>
+                    </div>
+
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);" >Contact</div>
+                        <div class="row">
+                        <div class="col">  
+                          <div class="card-body"><p>MAC's Services<br>
+                                <a href="mailto:powerweb@ap.be">mac@services.be
+                                </a><br>
+                                    +32 470 935330 </p>
+                                    <ul class="list-inline socials">
+                                    <li class="list-inline-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                   <i class="bi bi-youtube blauwgrijs fs-6"></i>
+                                  </a>
+                            </li>
+                            <li class="list-inline-item">
+                                      <a href="https://www.instagram.com" target="_blank">
+                                         <i class="bi bi-instagram blauwgrijs fs-6"></i>
+                                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                      <i class="bi bi-facebook blauwgrijs fs-6"></i>
+                                 </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank">
+                                  <i class="bi bi-twitter blauwgrijs fs-6"></i>
+                                </a>
+                             </li>
+                             </ul>
+                            </div>
+                        </div> <div class="col"> 
+                            <div class="card-body"><p>Fill in our <a href="contactform">contactform</a> <br>
+                                 or <br>
+                                make an <a href="#schedule">appointment</a></p></div>
+                            </div>
+                             </div> 
+                    </div>
+                    <div class="card mb-4 rounded">
+                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>Testimonial</strong></div>
+                                    <h2 class="card-title h4">Feedback lector</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                    <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
+                                </div>
+                            </div>
+
+                      <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">MAP</div>
+                        <div class="card-body"> <div class="map" id="map"> L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+                                maxZoom: 19,
+                                attribution: '&copy; <a href="contact.html">MACServices Address Map</a>'
+                        }).addTo(map);
+                        
+                        </div>MAP via openstreetmap</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <!-- Responsive navbar-->
+    
+ <nav class="navbar navbar-expand-sm bg-light container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><img src="assets/logo mac.png" alt="MACs Services" width="100" height="75"> MACS Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item dropup">
+                           <a class="nav-link dropdown-toggle" href="Project1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu">
+                             <li><a class="dropdown-item" href="#">Project 1</a></li>
+                              <li><a class="dropdown-item" href="#">Project 2</a></li>
+                              <li><a class="dropdown-item" href="#">Project 3</a></li>
+                              <li><a class="dropdown-item" href="#">Project 4</a></li>
+                              <li><a class="dropdown-item" href="#">Project 5</a></li>
+                              <li><a class="dropdown-item" href="#">Project 6</a></li>
+                            </ul>
+                        </li>   
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="news">News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+            
+            <div class="container"> 
+                <div class="row"> <div class="col"><p>dddssdsddsd</p></div></div>
+                <div class="row"> 
+                 <div class="col m-0 text-center text-white">Customer Extranet</div>
+                 <div class="col m-0 text-center text-white">Privacy policy</div>
+                 <div class="col m-0 text-center text-white">Cookies policy</div>
+                 <div class="col m-0 text-center text-white">Terms & Agreements</div>
+                <p class="m-0 text-center text-white">Copyright &copy; MAC Services 2026</p></div>
+                <div class="col text-end">
+                <ul class="list-inline socials">
+                                    <li class="list-inline-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                   <i class="bi bi-youtube blauwgrijs fs-6"></i>
+                                  </a>
+                            </li>
+                            </li>
+                            <li class="list-inline-item">
+                                      <a href="https://www.instagram.com" target="_blank">
+                                         <i class="bi bi-instagram blauwgrijs fs-6"></i>
+                                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                      <i class="bi bi-facebook blauwgrijs fs-6"></i>
+                                 </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank">
+                                  <i class="bi bi-twitter blauwgrijs fs-6"></i>
+                                </a>
+                             </li></div>
+                <div class="row"></div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
