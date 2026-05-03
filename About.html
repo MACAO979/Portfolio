@@ -29,8 +29,11 @@
        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
+       
+         <script src="https://unpkg.com/lunr/lunr.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+         <link rel="stylesheet" href="js/search/search.js">
 
-        
 
     </head>
     <body>
@@ -44,9 +47,9 @@
                         <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="Projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                          <a class="nav-link dropdown-toggle" href="Webdesign.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="Project1.html">Project 1</a></li>
+                              <li><a class="dropdown-item" href="Webdesign.html">Project 1</a></li>
                               <li><a class="dropdown-item" href="#">Project 2</a></li>
                               <li><a class="dropdown-item" href="#">Project 3</a></li>
                               <li><a class="dropdown-item" href="#">Project 4</a></li>
@@ -198,22 +201,23 @@
                 <div class="col-lg-4">
                     <!-- Search widget-->
                     <div class="card mb-4">
-                        <div class="card-header" style="background-color:rgb(12, 212, 146);">Search</div>
+                        <div class="card-header text-center text-uppercase" style="background-color:rgb(12, 212, 146);">Search</div>
                         <div class="card-body">
+                        <form class="search">
                             <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-                                 <button class="btn btn-primary-mac" id="button-search" type="button">Go</a>
-                            </div>
+                                <input class="form-control" id="search" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                 <a href=""><button class="btn btn-primary-mac search-button" type="button" value="Search">Go</a></form>
+                             </div>
                         </div>
                     </div>
                     <!-- Categories widget-->
                     <div class="card mb-4">
-                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">Projects</div>
+                        <div class="card-header text-center text-uppercase" style="background-color:rgb(12, 212, 146);">Projects</div>
                           <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
-                                        <li><a href="Project1.html">I.Web Design</a></li>
+                                        <li><a href="Webdesign.html">I.Web Design</a></li>
                                         <li><a href="#!">II.Com. Management</a></li>
                                         <li><a href="#!">III.SNB</a></li>
                                     </ul>
@@ -230,11 +234,12 @@
                     </div>
                       <!-- Side widget-->
                     <div class="card mb-4">
-                        <div class="card-header text-uppercase" id="news" style="background-color:rgb(12, 212, 146);">News</div>
+                        <div class="card-header text-center text-uppercase" id="news" style="background-color:rgb(12, 212, 146);">News</div>
                         <div class="card-body"><strong>Current Tech News</strong><iframe width="350" height="500" src="https://rss.app/embed/v1/wall/toEipx90F1iblbXc" frameborder="0"></iframe></div>
                     </div>
                     <!-- Side widget-->
                     <div class="card mb-4">
+                        <div class="card-header text-center text-uppercase"  style="background-color:rgb(12, 212, 146);"><h3> MAC Your Smart Choice</h3> </div>
                      <ul class="nav nav-tabs card-header-tabs"  id="myTab" role="tablist">
                         <li class="nav-item">
                            <a class="nav-link active" id="macschoice-tab" data-bs-toggle="tab" href="#tab10" role="tab" aria-controls="whymac" aria-selected="true">.
@@ -292,16 +297,30 @@
 
               <div class="tab-pane fade" style="background-color:#07f2b0"  id="tab6" role="tabpanel" aria-labelledby="tab5-tab">
                 <h3 class="text-center">Your Benefits</h3>
-                <p class="text-center">This is the content of the Care for Costumers tab.
+                     <p class="text-center">This is the content of the Care for Costumers tab.
                     This is the content of the Care for Price tab.
-                    This is the content of the Care for Price tab.
-                    This is the content of the Care for Price tab.
+                     
+                     <canvas id="grafiek" width="400" height="200"></canvas>
+                     <script>
+                     const canvas = document.getElementById('grafiek');
+
+                        new Chart(canvas, {
+                        type: 'bar',
+                   data: {
+                            labels: ['2018', '2019', '2020', '2021', '2022','2023', '2024', '2025'],
+                          datasets: [{
+                      label: 'Numbers of applied Smart Devices',
+                         data: [127, 158, 200, 400, 600, 800, 1000, 1200,]
+                         }]
+                              }
+                                });
+                          </script>
                 </p></div>
                     </div>
 
                     <!-- Side widget-->
                     <div class="card mb-4">
-                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);" >Contact</div>
+                        <div class="card-header text-center text-uppercase" style="background-color:rgb(12, 212, 146);" >Contact</div>
                         <div class="row">
                         <div class="col">  
                           <div class="card-body"><p>MAC's Services<br>
@@ -341,7 +360,7 @@
                     <div class="card mb-4 rounded">
                                 <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
                                 <div class="card-body">
-                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>Testimonial</strong></div>
+                                    <div class="large text-center text-uppercase" style="color:#3bd945;"><strong>Testimonial</strong></div>
                                     <h2 class="card-title h4">Feedback lector</h2>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
                                     <a class="btn btn-primary-mac" href="under construction.html">Under construction Soon to be finalized →</a>
@@ -349,7 +368,7 @@
                             </div>
 
                       <div class="card mb-4">
-                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">MAP</div>
+                        <div class="card-header text-center text-uppercase" style="background-color:rgb(12, 212, 146);">MAP</div>
                         <div class="card-body"> <div class="map" id="map"> L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { 
                                 maxZoom: 19,
                                 attribution: '&copy; <a href="contact.html">MACServices Address Map</a>'
@@ -371,13 +390,13 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 text-center">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
                         <li class="nav-item dropup"></li>
                         <li class="nav-item dropup">
-                           <a class="nav-link dropdown-toggle dropup-content" href="Project1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                           <a class="nav-link dropdown-toggle dropup-content" href="Webdesign.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                             <ul class="dropdown-menu" id="droppup">
-                             <li><a class="dropdown-item" href="Project1.html">Project 1</a></li>
+                             <li><a class="dropdown-item" href="Webdesign.html">Project 1</a></li>
                               <li><a class="dropdown-item" href="#">Project 2</a></li>
                               <li><a class="dropdown-item" href="#">Project 3</a></li>
                               <li><a class="dropdown-item" href="#">Project 4</a></li>
@@ -400,7 +419,7 @@
                  <div class="col m-0 text-center text-white">Privacy policy</div>
                  <div class="col m-0 text-center text-white">Cookies policy</div>
                  <div class="col m-0 text-center text-white">Terms & Agreements</div>
-                <p class="m-0 text-center text-white">Copyright &copy; MAC Services 2026</p></div>
+                <p class="m-0 text-center text-white">Copyright &copy;<span id="year"></span> MAC Services</p></div>
                 <div class="col text-end">
                 <ul class="list-inline socials">
                                     <li class="list-inline-item">
@@ -430,5 +449,7 @@
     
         <!--  theme JS-->
         <script src="js/scripts.js"></script>
+        <link src="js/apiscripts.js">
+    
     </body>
 </html>
