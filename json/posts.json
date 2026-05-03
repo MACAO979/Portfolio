@@ -1,0 +1,60 @@
+---
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.categories | join: ' ' }}",
+      "content"	 : "{{post.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\"}}",
+      "url"      : "{{ index.html }}{{ post.url }}",
+      "date"     : "{{ post.date }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+
+
+;(function(global,$) {
+ 
+  'use strict';
+
+  Query.prototype = {
+    
+    set: function(val) {
+      this.q = val;
+      return this;
+    },
+   
+    goToLocation: function(route) {
+      if(typeof this.q !== 'undefined' && typeof this.q === 'string') {
+        document.location.href=route+'/?query='+this.q;
+      } else {
+        return;
+      }
+    },
+  
+    get: function() {
+      return this.q;
+    },
+
+    setFromURL: function(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+
+      this.q = results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+
+      return this;        
+    },
+
+    getJSON: function(file) {
+      return $.get(file);
+    }
+  };
+
+  {
+    if(typeof q !== 'undefined' && typeof q === 'string') {
+      this.q = q;
+    }
+  }
+  global.Query = Query;
+})(this,$);
