@@ -5,7 +5,7 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-var map = L.map('map').setView([ 51.323278, 4.938841], 10);
+var map = L.map('map').setView([51.317, 4.933], 10);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { 
                                 maxZoom: 19,
                                 attribution: '&copy; <a href="contact.html">MACServices Address Map</a>'
@@ -15,27 +15,28 @@ var logoIcon = L.icon({
     iconUrl: 'assets/logo marker.png',
     shadowUrl: 'assets/logo marker shadow.png',
 
-    iconSize:     [55, 35], // size of the icon
-    shadowSize:   [7, 4], // size of the shadow
-    iconAnchor:   [45, 94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62],  // the same for the shadow
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+    iconSize:     [65, 95],
+    shadowSize:   [22, 94],
+    iconAnchor:   [45, 94],
+    shadowAnchor: [38, 92], 
+    popupAnchor:  [-3, -76] 
 });                        
-var marker = L.marker([51.323278, 4.938841], {icon: logoIcon}).addTo(map);
+var marker = L.marker([51.317, 4.933], {icon: logoIcon}).addTo(map);
 
 var bounds = [[51.3095339, 4.9211096], [51.32471998427867, 4.9691895838]];
-L.rectangle(bounds, {color: "#34594f", weight: 1}).addTo(map);
+L.rectangle(bounds, {color: "#f2de07", weight: 2}).addTo(map);
 
 
 
 var polygon = L.polygon([
-   [51.323, 4.938],
-    [51.323, 4.937],
-    [51.32, 4.93],
+   [51.317, 4.933],
+    [51.315, 4.931],
+    [51.31, 4.93],
 ]).addTo(map);
-marker.bindPopup("<b>Here is were</b><br> You can find us!").openPopup();
+marker.bindPopup(" in Turnhout <br> <b>Here is were</b><br> You can find us!").openPopup();
 rectangle.bindPopup("This is the area around us.");
 polygon.bindPopup(".");
+2
 
 var dt = new Date();
 document.getElementById("datetime").innerHTML = dt.toLocaleString();
