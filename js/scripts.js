@@ -5,6 +5,15 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+
+var currentYear = new Date().getFullYear();
+document.getElementById("year").textContent = currentYear;
+
+
 var map = L.map('map').setView([51.317, 4.933], 10);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { 
                                 maxZoom: 19,
@@ -26,8 +35,6 @@ var marker = L.marker([51.317, 4.933], {icon: logoIcon}).addTo(map);
 var bounds = [[51.3095339, 4.9211096], [51.32471998427867, 4.9691895838]];
 L.rectangle(bounds, {color: "#f2de07", weight: 2}).addTo(map);
 
-
-
 var polygon = L.polygon([
    [51.317, 4.933],
     [51.315, 4.931],
@@ -36,54 +43,3 @@ var polygon = L.polygon([
 marker.bindPopup(" in Turnhout <br> <b>Here is were</b><br> You can find us!").openPopup();
 rectangle.bindPopup("This is the area around us.");
 polygon.bindPopup(".");
-2
-
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleString();
-
-const currentYear = new Date().getFullYear();
-document.getElementById("year").textContent = currentYear;
-
-$('#dropdownMenuButton').dropdown('toggle');
-
-$(document).ready(function(){
-$.ajax({
-type:"get",
-url:"https://randomuser.me/api/?result=6",
-success: function(data){
-result="";
-for(i in data){
-result+="ID: "+data[i].ID+" // UUID: "+data[i].UUID+"<br>";
-}
-$("#list").html(result);
-}
-});
-});
-
-
-fetch('https://randomuser.me/api/?result=6')
-  .then(response => response.json()) 
-  .then(posts => {
-  
-    posts.forEach(post => {
-      const postDiv = document.createElement('div');
-      postDiv.innerHTML = `
-        <h2>${post.title}</h2>
-        <p>${post.body}</p>
-      `;
-      postsContainer.appendChild(postDiv);
-    });
-  })
-  .catch(error => console.error('Error fetching posts:', error));
-
-
-
-
-
-
-
-
-
-
-
-

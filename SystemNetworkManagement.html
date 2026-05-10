@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-US",>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SystemAndNetworkManagement</title>
+        <!-- MAC Services-->
+        <link rel="icon" type="image" href="assets/logo mac.png" />
+          <!-- resetten van browsers -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- JavaScript: Bootstrap Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+       </script>
+       <!-- extra CSS  Bootstrap)-->
+       <link href="css/styles.css" rel="stylesheet" />
+       <!--My Leeaflet MAP-->
+       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+           integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+              <!-- Java Leaflet's CSS -->
+       <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     
+
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><img src="assets/logo mac.png" alt="MACs Services" width="100" height="75"> MACS Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 text-center h6">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="Webdesign.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="Webdesign.html">Web Design</a></li>
+                              <li><a class="dropdown-item" href="CommunicationManagement.html">Communication Management</a></li>
+                              <li><a class="dropdown-item" href="SystemNetworkManagement.html">System & Network Management</a></li>
+                              <li><a class="dropdown-item" href="SecurityAssessment.html">Security Assessment</a></li>
+                              <li><a class="dropdown-item" href="DIV.html">Documentation Information Provision</a></li>
+                              <li><a class="dropdown-item" href="SmartAppliances.html">Home&Office Smart Appliances</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+         <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class=" my-5">
+                    <h1 class="fw-bolder text-center text-uppercase">Your System And Network Specialist</h1>
+                    <h3 class="lead mb-0 favfont" style="color:#3bd945"><strong><h4>Powered by MAC Services, your designated partner in System and Network Management</h4></strong></h3>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+         <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured  post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="assets/SNB/routerapplication.webp" width="500" height="450" alt="" /></a>
+                        <div class="card-body text-center">
+                            <div class="small "><strong><span style="background-color:rgb(12, 212, 146);" id="datetime"></span></strong></div>
+                            <h2 class="card-title" >As Your Designated Specilaist for your IT Network</h2>
+                            <p class="card-text h4" style="color:#3bd945;">We make sure the right equipment is used for the correct utillity. Maximizing network performance and optimalize Netwrok Security.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><figure>
+  <img src="assets/SNB/dioderouterswitch.webp" alt="" style="width:100%">
+  <figcaption class="text-center btn-primary-mac">image from https://medium.com/</figcaption>
+</figure></a>
+                                <div class="card-body">
+                                    <div class="large  text-center text-uppercase" style="color:#3bd945;"> <strong>Network traffic</strong></div>
+                                      <p class="card-title  h4">What to and What <strong> Not</strong> to!
+                                        </h2>
+                                      <p class="card-text"> First, we distinguish what traffic will be generated through the network.
+                                        What is allowed and what is not ?
+                                        <ol>
+                                        <li>To be concrete, are social media channels allowed?
+                                          <ul>
+                                               <li>🟩Yes</li>
+                                               <li>🟥No</li>
+                                               <li>🟧Particial, what socials are allowed</li>
+                                           </ul>
+                                         <li>Audio and video streaming</li>
+                                         <li>Should the network be accessible from outside meaning can employees log in from their home into the network
+                                            <ul>
+                                                <li>On devices</li>
+                                                <li>company devices</li>
+                                            </ul>
+                                         </li>
+                                         <li> Or access from the public or other parties like cosutomers or other stakeholders</li>
+                                          <li>How many users will be making use of the network?</li>
+                                       <li>And ofcourse your budget!</li>
+                                       <ol>
+                                        <br>
+                                    These are some of the questions that we disucuss to detretmine what type of network soulution we can implement for you. </p>
+                                    </div>
+                                 </div>
+                            <div class="card mb-4">
+                                <a href="#!"><figure>
+                                 <img src="assets/SNB/devices and routers.jpg" alt="" style="width:100%">
+                                  <figcaption class="text-center">image from https://www.differencebetween.net</figcaption>
+                                    </figure></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase text-center" style="color:#3bd945;"><strong>Network Components</strong></div>
+                                    <h2 class="card-title h4">Cloud networking or physical networking</h2>
+                                    <p class="card-text text-justify"> In contrast to the past, where it was a must to have a PBX or PABX and large servers to run a large-scale network, 
+                                        today's technology makes it possible to run your business without physical servers, and it is possible to have a mainly wireless network.
+                                        This is then called Cloud Computing. <br>
+                                        <br>
+                                       These types of networks need at least a router to connect the main elements, and the rest can be connected via 
+                                       wireless connection methods like Bluetooth and Wi-Fi. The main benefits of a cloud-computed network are the startup costs,
+                                       which are relatively lower than those of a physically oriented network. <br>
+                                        <br>
+                                        As the network grows and becomes more complex, these factors will increase the costs of a cloud-computed network
+                                        <br>
+                                        <br>
+                                        Physical networking has a more expensive setup cost, takes more time, 
+                                        and requires an expert level of troubleshooting. You have more control over the access points, especially if your servers are in-house.
+                                        If there is an increase in users, you do not incur any extra costs.
+                                
+                                       <img src="assets/storage.jpg" alt="" style="width:100%">
+                                  <figcaption class="text-center">image from https://www.differencebetween.net</figcaption>
+                                    </figure></a>  <br> <br> <br> </div>
+                            </div>
+
+                           
+                            
+                            </div>
+
+
+                            
+                           <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4"><figure>
+                                <a href="#!"><img class="card-img-top" src="assets/SNB/Homenetwork.png" alt="" /> <figcaption class="text-center btn-primary-mac"> image from https://www.cwnp.com/</figcaption> </a></figure>
+                                <div class="card-body">
+                                    <div class="large text-uppercase text-center" style="color:#3bd945;"><strong>Network Configuration</strong></div>
+                                    <h2 class="card-title h4">Software and Harware</h2>
+                                    As already defined besides your devices like laptops desktops, printers and sacnneers we need a minimium set of equipment to set op a Cloud Computing based Network.
+                                    These devices has to be Edge compatibale.
+                                    <ol type="I">
+                                        <li><b class="mac">Networking Hardware (On-Premises/Edge)</b>
+                                            <ol type="i">
+                                                <li><b>Routers: for the connection with your ISP</b></li>
+                                                    <li><b>Switches:</b> high-performance Ethernet (e.g., 10G/25G/100G)</li>
+                                                    <li><b>irewalls & Security Appliances:</b> Next-Generation Firewalls (NGFW) or Unified Threat Management (UTM) devices</li>
+                                                    <li><b>Access Points (APs):</b> Quality wireless accespoints</li>
+                                                    <li><b>Cabling:</b> High-speed fiber optic or Ethernet cabling (Cat6/6a)</li>
+                                            </ol>
+                                        </li>
+                                        <li><b class="mac">Computing and Storage Hardware</b>
+                                            <ol type="i">
+                                                <li><b>Servers:</b> Depending on your needs </li>
+                                                <li><b>Storage Devices</b></li>
+                                                <li><b>Workstatios/Clients:</b> laptops Desktos, Tablets etc.</li>
+                                            </ol>
+                                        </li>
+                                        <li><b class="mac"> Cloud Networking Infrastructure (Virtual)</b>
+                                            <ol type="i">
+                                                <li><b>VPC (Virtual Private Cloud)</b></li>
+                                                <li><b>Load Balancers</b></li>
+                                                <li><b>VPN (Virtual Private Network)</b></li>
+                                            </ol>
+                                        </li>
+                                        <li><b class="mac">Supporting Infrastructure</b>
+                                            <ol type="i">
+                                                <li><b>UPS (Uninterruptible Power Supplies):</b>For emergency power supply for your network during power outages.</li>
+                                                <li><b>Environmental Control: cooling systems.</b></li>
+                                                </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4 rounded"> <figure>
+                                <a href="#!"><img class="card-img-top" src="assets/SNB/cloudsetup.jpg" alt="cloud setup" /> <figcaption class="text-center btn-primary-mac">image from <a href="https://www.linkedin.com/posts/sedqatullah-yaqoubi-4a9178124_networking-cisco-lan-activity-7381179343600877569-_puL">Sedqatullah Yaqoubi</a> <i class="bi-linkedin"></i></figcaption> </a></figure>
+                                 <div class="card-body">
+                                    <div class="large text-uppercase mac2">The image above showcases the setup of a cloud computed based Network.</div>
+                                    <br> <br>
+                                    <h2 class="card-title h4"> The image hereunder showcases the setup of a physical based Network</h2>
+                                    <img class="card-img-top" src="assets/SNB/setupmetpcimage.jpg" alt="cloud setup" /> <figcaption class="text-center btn-primary-mac">image from <a href="https://www.linkedin.com/posts/sedqatullah-yaqoubi-4a9178124_networking-cisco-lan-activity-7381179343600877569-_puL">Sedqatullah Yaqoubi</a> <i class=" bi bi-linkedin"></i></figcaption> </a></figure>
+                                    <p class="card-text">
+                                        
+                                    
+
+                                </div>
+                            </div>
+                             
+                        </div>
+                    </div>
+                    <!-- Pagination--> 
+
+                    <div class="card mb-8">
+                        <div class="card-header text-uppercase text-center" style="background-color:rgb(12, 212, 146);">Pricing</div>
+                        <p class="large text-center text-uppercase" style="color:#3bd945;"><strong>These are some standard pricing options and are subject to change if you add more features</strong>
+                            <br></p>
+                        <div class="container">           
+  <table class="table">
+    <thead class="thead-mac">
+      <tr>
+        <th scope=“col” style="border-bottom: 2px solid black;"><!-- Intentionally Blank --></th>
+        <th scope=“col” style="border-bottom: 2px solid black;"><h5>Basic Start</h5> <br>299,99&#8364</th>
+        <th scope=“col” style="border-bottom: 2px solid black;"><h5>Medium Scale</h5><br> 499,99&#8364</th>
+        <th scope=“col” style="border-bottom: 2px solid black;"><h5>Large Company</h5><br> 899,99&#8364</th>
+        <th scope=“col” style="border-bottom: 2px solid black;"><h5>Multi Brach</h5><br> 1499,99&#8364</th>
+      </tr>
+    </thead>
+<tbody>
+      <tr>
+        <td scope=“row”>Azure VRT Machine</td>
+        <td scope=“row”> ✅</td>
+        <td scope=“row”> ✅</td>
+        <td scope=“row” >✅</td>
+        <td scope=“row” >✅</td>
+      </tr>
+      <tr>
+        <td scope=“row” >Azure Storage</td>
+        <td scope=“row” >✅</td>
+        <td scope=“row” >✅</td>
+        <td scope=“row” >✅</td>
+        <td scope=“row” >✅</td>
+      </tr>
+      <tr>
+        <td scope=“row”>Azure App Service</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+      </tr>
+      <tr><td>Azure SQL Databases</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+    </tr>
+    <tr>
+        <td scope=“row”>Azure DB Bolb</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+    </tr>
+       <tr>
+        <td scope=“row”>Azure Functions</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+    </tr>
+        <tr>
+        <td scope=“row”>Azure AI Custom Vision</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>✅</td>
+        <td scope=“row”>✅</td>
+    </tr>
+    <tr>
+        <td scope=“row”>Azure Databricks</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>❌</td>
+        <td scope=“row”>✅</td>
+    </tr>
+    </tbody>
+</div>           
+  </table>
+                    </div>
+                     <div class="card-body"><!-- checken of ik nog een footer plaats--></div>
+
+            
+            
+                </div>
+            
+            
+            </div>
+
+                    
+                <!-- Side widgets-->
+               <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header" style="background-color:rgb(12, 212, 146);">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">Projects</div>
+                          <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="Webdesign.html">I.Web Design</a></li>
+                                        <li><a href="CommunicationManagement.html">II.Com. Management</a></li>
+                                        <li><a href="SystemNetworkManagement.html">III.SNB</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="SecurityAssessment.html">IV.Security</a></li>
+                                        <li><a href="DIV.html"><abbr title="Documentaire Informatievoorziening">V.DIV</abbr></a></li>
+                                        <li><a href="SmartAppliances.html">VI.Smart Appliances</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase"  id="news" style="background-color:rgb(12, 212, 146);">News</div>
+                        <div class="card-body"><strong>Current Tech News</strong><iframe width="350" height="500" src="https://rss.app/embed/v1/wall/toEipx90F1iblbXc" frameborder="0"></iframe></div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                     <ul class="nav nav-tabs card-header-tabs"  id="myTab" role="tablist">
+                        <li class="nav-item">
+                           <a class="nav-link active" id="macschoice-tab" data-bs-toggle="tab" href="#tab10" role="tab" aria-controls="whymac" aria-selected="true">.
+                             Why MAC</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" id="addedvalue-tab" data-bs-toggle="tab" href="#tab9" role="tab" aria-controls="addedvalue" aria-selected="false">
+                                Our added value
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                <a class="nav-link" id="cc-tab" data-bs-toggle="tab" href="#tab8" role="tab" aria-controls="careforcostumers" aria-selected="false">
+                       Care for Costumers
+                </a>
+            </li>
+                        <li class="nav-item">
+                <a class="nav-link" id="price" data-bs-toggle="tab" href="#tab7" role="tab" aria-controls="price" aria-selected="false">
+                    Price
+                </a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" id="benefits-tab" data-bs-toggle="tab" href="#tab6" role="tab" aria-controls="benefits" aria-selected="false">
+                    Your Benefits
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" style="background-color:#07f2b0" id="tab10" role="tabpanel" aria-labelledby="macschoice">
+                <h3 class="text-center">Why MAC is Your Choice</h3>
+               <p class="text-center"><strong>Besides the fact of fresh trained professionals in IT.
+                    We offer an  in depth assessment which leads to  different possibilities in how to best position your business.</strong></p>
+            </div>
+        
+        <div class="tab-pane fade" style="background-color:#07F2C7" id="tab9" role="tabpanel" aria-labelledby="ta2-tab">
+                <h3 class="text-center">Our Added Value</h3>
+                <p class="text-center">We dont think for you but we think a long with you.
+                Give suggestions.
+                Available when you decide to implement.
+                And we are open to your input to come to even greater solutions.
+
+                   
+                </p>
+            </div>
+            <div class="tab-pane fade" style="background-color:#07f2b0" id="tab8" role="tabpanel" aria-labelledby="tab3-tab">
+                <h3 class="text-center">Care for Costumers Content</h3>
+                <p class="text-center justify-content-center">
+                    24 /7 Assistance on all our services.
+                    <br>
+                    Online Q&A.
+                    <br>
+                    Multilangual Custmer Cae center.
+                    <br>
+                    Best of Both Wolrd Software and Harware IT Specialist available.
+                    <br>
+                    Last but not least great discounts, 
+                    and even more when combining services!
+                </p>
+            </div>
+
+              <div class="tab-pane fade" style="background-color:#07F2C7" id="tab7" role="tabpanel" aria-labelledby="tab4-tab">
+                <h3 class="text-center">Price</h3>
+                <p class="text-center">
+                    Pricing the depends on the service. Starting from standard up to Pro.
+                    Also you have the option to combine services. This leads to great Discounts.
+                    <br>
+                    Please sent us a request for a price estiamte via our <a href="Contact.html#contactform">contactform</contactform>/a></p>
+            </div>
+
+              <div class="tab-pane fade" style="background-color:#07f2b0"  id="tab6" role="tabpanel" aria-labelledby="tab5-tab">
+                <h3 class="text-center">Your Benefits</h3>
+     <p class="text-center">
+        Great service
+        <br>
+        No Complicated procedures
+        <br>
+        Direct comunication
+        <br>
+        Customer Care is always available
+                </p></div>
+                    </div>
+
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);" >Contact</div>
+                        <div class="row">
+                        <div class="col">  
+                          <div class="card-body"><p>MAC's Services<br>
+                                <a href="mailto:powerweb@ap.be">mac@services.be
+                                </a><br>
+                                    +32 470 935330 </p>
+                                    <ul class="list-inline socials">
+                                    <li class="list-inline-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                   <i class="bi bi-youtube blauwgrijs fs-6"></i>
+                                  </a>
+                            </li>
+                            <li class="list-inline-item">
+                                      <a href="https://www.instagram.com" target="_blank">
+                                         <i class="bi bi-instagram blauwgrijs fs-6"></i>
+                                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                      <i class="bi bi-facebook blauwgrijs fs-6"></i>
+                                 </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank">
+                                  <i class="bi bi-twitter blauwgrijs fs-6"></i>
+                                </a>
+                             </li>
+                             </ul>
+                            </div>
+                        </div> <div class="col"> 
+                            <div class="card-body"><p>Fill in our <a href="Contact.html#contactform">contactform</a> <br>
+                                 or <br>
+                                make an <a href="Contact.html#schedule">appointment</a></p></div>
+                            </div>
+                             </div> 
+                    </div>
+                    <div class="card mb-4 rounded">
+                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>Testimonial</strong></div>
+                                    <h2 class="card-title h4">Feedback lector</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+
+                      <div class="card mb-4">
+                        <div class="card-header text-uppercase" style="background-color:rgb(12, 212, 146);">MAP</div>
+                        <div class="card-body"> 
+                            
+                            <div class="map" id="map"> L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+                                maxZoom: 19,
+                                attribution: '&copy; <a href="contact.html">MACServices Address Map</a>'
+                        }).addTo(map);
+                        
+                        </div>MAP via openstreetmap</div>
+                        
+                    </div>
+
+                </div>
+                <div class="card mb-4 rounded">
+                                <div class="card-body">
+                                    <div class="large text-uppercase" style="color:#3bd945;"><strong>Demo</strong></div>
+                                    <h2 class="card-title h4">In Real time a Monitoring Example</h2>
+                                                                        <p class="card-text mac">This is a live demo from yFIles</p>
+
+                                   <embed src="https://live.yworks.com/demos/showcase/networkmonitoring/index.html" width="400" height="830" type="">     
+                                </div>
+                            </div>
+            </div>
+        </div>
+         <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <!-- Responsive navbar-->
+    
+ <nav class="navbar navbar-expand-sm bg-light container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#!"><img src="assets/logo mac.png" alt="MACs Services" width="100" height="75"> MACS Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item dropup">
+                           <a class="nav-link dropdown-toggle" href="Webdesign.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                            <ul class="dropdown-menu" id="droppup">
+                              <li><a class="dropdown-item" href="Webdesign.html">Web Design</a></li>
+                              <li><a class="dropdown-item" href="CommunicationManagement.html">Communication Management</a></li>
+                              <li><a class="dropdown-item" href="SystemNetworkManagement.html">System & Network Management</a></li>
+                              <li><a class="dropdown-item" href="SecurityAssessment.html">Security Assessment</a></li>
+                              <li><a class="dropdown-item" href="DIV.html">Documentation Information Provision</a></li>
+                              <li><a class="dropdown-item" href="SmartAppliances.html">Home&Office Smart Appliances</a></li>
+                            </ul>
+                        </li>   
+                        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+
+
+            <div class="container"> 
+                <div class="row"> <div class="col"><p>dddssdsddsd</p></div></div>
+                <div class="row"> 
+                 <div class="col m-0 text-center text-white">Customer Extranet</div>
+                 <div class="col m-0 text-center text-white">Privacy policy</div>
+                 <div class="col m-0 text-center text-white">Cookies policy</div>
+                 <div class="col m-0 text-center text-white">Terms & Agreements</div>
+                <p class="m-0 text-center text-white">Copyright &copy; <span id="year"></span> MAC Services</p></div>
+                
+               <div class="col text-end">
+                <ul class="list-inline socials">
+                                    <li class="list-inline-item">
+                                <a href="https://www.youtube.com" target="_blank">
+                                   <i class="bi bi-youtube blauwgrijs fs-6"></i>
+                                  </a>
+                            </li>
+                            </li>
+                            <li class="list-inline-item">
+                                      <a href="https://www.instagram.com" target="_blank">
+                                         <i class="bi bi-instagram blauwgrijs fs-6"></i>
+                                    </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com" target="_blank">
+                                      <i class="bi bi-facebook blauwgrijs fs-6"></i>
+                                 </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank">
+                                  <i class="bi bi-twitter blauwgrijs fs-6"></i>
+                                </a>
+                             </li></div>
+                <div class="row"></div>
+            </div>
+        </footer>
+        
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+       
